@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    text-align: center;
+    padding: 20px;
+    direction: rtl; /* تحويل النصوص والجدول من اليمين إلى اليسار */
+}
+
+
+
+.navbar {
+  background-color: orangered;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0 0 10px rgb(255, 0, 255);
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 0;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 8px;
+
+}
+
+.navbar a {
+  background-color: hsl(29, 100%, 49%);
+  display: block;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  flex: 1 1 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(0, 17, 255);
+  font-size: 17px;
+}
+
+
+
+
+.navbar a:hover {
+  background-color: #756f6f;
+  color: rgb(0, 0, 0);
+}
+
+.container0 {
+background-color: rgba(255, 0, 0);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(0, 250, 250);
+    max-width: 800px;
+    margin: 0 auto;
+}
+.container {
+    background-color: rgb(129, 129, 129);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(247, 5, 174);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  text-align: center; /* يجعل النص في المنتصف */
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 7s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(50%); } /* البداية من المنتصف */
+  to { transform: translateX(-50%); }  /* النهاية في المنتصف */
+}
+
+
+h1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    direction: rtl; /* تحويل اتجاه الجدول */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+footer {
+    background-color: #797474;
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 14px;
+    border-radius: 25px ;
+    box-shadow: 0 0 10px rgb(255, 0, 0);
+}
+
+
+        /* زر الرجوع لأعلى الصفحة */
+        #scrollTopBtn {
+          box-shadow: 0 0 10px rgb(255, 0, 0);
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          z-index: 99;
+          font-size: 18px;
+          background-color: #333;
+          color: white;
+          border: none;
+          padding: 10px 15px;
+          border-radius: 5px;
+          cursor: pointer;
+          display: none; /* يكون مخفي في البداية */
+      }
+
+      #scrollTopBtn:hover {
+          background-color: #555;
+      }
+
+      /* لجعل التمرير سلس */
+      html {
+          scroll-behavior: smooth;
+      }
